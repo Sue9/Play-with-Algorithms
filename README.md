@@ -8,5 +8,10 @@
 |					| 1-2 Syllabus								|
 |					|											|
 | 二、 Sort			| 2-1 Selection Sort						| 
-|					| 
+|					| 2-2 Generic Types		
+|					| 2-3 Random Generating Test Cases
+| 					| 2-4 Performance of Algorithms
+| 					| 2-5 Insertion Sort
+| 					| 2-6 Optimisation of Insertion Sort
+| 					| 2-7 More on O(n ^ 2) sorting algorithms(Bubble Sort & Shell Sort)
 

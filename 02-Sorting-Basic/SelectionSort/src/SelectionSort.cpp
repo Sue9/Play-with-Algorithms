@@ -9,6 +9,7 @@
 #include <iostream>
 #include <algorithm>
 #include "Student.h"
+#include "SortTestHelper.h"
 
 using namespace std;
 
@@ -23,54 +24,28 @@ void selectionSort( T arr[], int n ){
 				minIndex = j;
 		}
 
-//		std::swap(arr[i], arr[minIndex]);
-
-
-		T tp = arr[i];
-		arr[i] = arr[minIndex];
-		arr[minIndex] = tp;
+		std::swap(arr[i], arr[minIndex]);
 
 	}
 
 }
 
+
+
+
 int main() {
-	//	cout<<"into main"<<endl;
-	int a[10] = {10,9,8,7,6,5,4,3,2,1};
-	selectionSort(a, 10);
-
-	for(int i = 0; i < 10; i++){
-		cout << a[i] << " ";
-	}
-	cout << endl;
 
 
-	//float
-	float b[4] = {4.4, 3.4, 2.2, 1.1};
-	selectionSort(b, 4);
+	int n = 10000;
+	int *arr = SortTestHelper::generateRandomArray(n, 0, n);
 
-	for(int i = 0; i < 4; i++){
-		cout << b[i] << " ";
-	}
-	cout << endl;
+//	selectionSort(arr, n);
+//	SortTestHelper::printArray(arr, n);
+    SortTestHelper::testSort("Selection Sort", selectionSort, arr, n);
 
 
-	//string
-	string c[4] = {"D", "C", "B", "A"};
-	selectionSort(c, 4);
+	delete[] arr;
 
-	for(int i = 0; i < 4; i++){
-		cout << c[i] << " ";
-	}
-	cout << endl;
-
-	//Student
-	Student d[4] = {{"D", 90}, {"C", 100}, {"B", 95}, {"A", 95}};
-	selectionSort(d, 4);
-	for(int i = 0; i < 4; i++){
-		cout << d[i] << " ";
-	}
-	cout << endl;
 
 	return 0;
 

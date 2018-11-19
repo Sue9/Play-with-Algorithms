@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Github Sue9/Play-with-Algorithms/02-Sorting-Basic/InsertionSort/SortTestHelper.h
+iostream
+-
+ctime
+-
+cassert
+-
+
+D:/Github Sue9/Play-with-Algorithms/02-Sorting-Basic/InsertionSort/main.cpp
+iostream
+-
+SortTestHelper.h
+D:/Github Sue9/Play-with-Algorithms/02-Sorting-Basic/InsertionSort/SortTestHelper.h
+
