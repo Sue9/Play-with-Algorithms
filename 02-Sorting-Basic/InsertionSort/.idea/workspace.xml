@@ -11,14 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e5c653-4bbe-466e-92ed-e4dddf8a4b94" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../SelectionSort/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/../SelectionSort/.cproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SelectionSort/.settings/language.settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SelectionSort/.settings/language.settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SelectionSort/Debug/SelectionSort.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../SelectionSort/Debug/SelectionSort.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SelectionSort/Debug/src/SelectionSort.o" beforeDir="false" afterPath="$PROJECT_DIR$/../SelectionSort/Debug/src/SelectionSort.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SelectionSort/src/SelectionSort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../SelectionSort/src/SelectionSort.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-    </list>
+    <list default="true" id="a5e5c653-4bbe-466e-92ed-e4dddf8a4b94" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +24,7 @@
     <session id="-80849049">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -68,7 +62,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="443">
               <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -109,7 +103,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="231" />
     <option name="y" value="22" />
     <option name="width" value="1400" />
@@ -181,16 +175,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542613806138</updated>
-      <workItem from="1542613808534" duration="2892000" />
+      <workItem from="1542613808534" duration="3498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2892000" />
+    <option name="totallyTimeSpent" value="3498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="231" y="22" width="1400" height="980" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -203,7 +196,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289941" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289941" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -236,7 +229,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="443">
           <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
