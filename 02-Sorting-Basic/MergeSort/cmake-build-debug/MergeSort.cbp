@@ -83,6 +83,9 @@
 		<Unit filename="D:/Github Sue9/Play-with-Algorithms/02-Sorting-Basic/MergeSort/InsertionSort.h">
 			<Option target="MergeSort"/>
 		</Unit>
+		<Unit filename="D:/Github Sue9/Play-with-Algorithms/02-Sorting-Basic/MergeSort/MergeSort.h">
+			<Option target="MergeSort"/>
+		</Unit>
 		<Unit filename="D:/Github Sue9/Play-with-Algorithms/02-Sorting-Basic/MergeSort/main.cpp">
 			<Option target="MergeSort"/>
 		</Unit>

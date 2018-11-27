@@ -2,74 +2,26 @@
 #include <algorithm>
 #include "SortTestHelper.h"
 #include "InsertionSort.h"
+#include "MergeSort.h"
 
 using namespace std;
 
-//this function merges two parts: arr[l...mid] and arr[mid+1...r]
+//BU = bottom up
 template <typename T>
-void __merge(T arr[], int l, int mid, int r){
-    T aux[r - l + 1];
-    for(int i = l; i < r+1; i++ ){
-        aux[i-l] = arr[i];
+void mergeSortBU(T arr[], int n){
+    for(int size = 1; size <= n; size += size){
+        for(int j = 0; j+size< n ; j += 2*size){
+            //merge arr[i...i+size-1] and arr[i+size...i+2*size-1]
+            __merge(arr, j, j+size-1, min(j+2*size-1, n-1));
+        }
     }
 
-    int i = l, j = mid+1;
-    for(int k = l; k <= r; k++){
-        if(i > mid){
-            arr[k] = aux[j - l];
-            j++;
-        }
-        else if (j > r){
-            arr[k] = aux[i - l];
-            i++;
-        }
-
-        else if(aux[i - l] < aux[j - l]){
-            arr[k] = aux[i - l];
-            i++;
-        }
-        else{
-            arr[k] = aux[j - l];
-            j++;
-        }
-
-    }
 }
-
-
-
-
-//this function is used for recursive call in mergeSort() only
-//it sorts on range [l...r]
-//__ stands for private function
-template <typename T>
-void __mergeSort(T arr[], int l, int r){
-//    if (l >= r)
-//        return;
-    if(arr.length <= 15){
-
-    }
-
-
-    int mid = (l + r)/ 2;
-
-    __mergeSort(arr, l, mid);
-    __mergeSort(arr, mid+1, r);
-
-    if(arr[mid] > arr[mid+1])
-        __merge(arr, l, mid, r);
-}
-
-
-template <typename T>
-void mergeSort(T arr[], int n){
-    __mergeSort(arr, 0, n - 1);
-
-}
-
 
 
 int main() {
+
+
     int n = 50000;
     cout << "Test for Random Array, size = " << n << ", random range [0, "<< n <<"]"<< endl;
     int* arr1 = SortTestHelper::generateRandomArray(n, 0, n);
