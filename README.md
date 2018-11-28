@@ -14,4 +14,11 @@
 | 					| 2-5 Insertion Sort
 | 					| 2-6 Optimisation of Insertion Sort
 | 					| 2-7 More on O(n ^ 2) sorting algorithms(Bubble Sort & Shell Sort)
+| 三、 Quicker Sort 	| 3-1 Merge Sort -- Up to Bottom
+|					| 3-2 Merge Sort II
+| 					| 3-3 Merge Sort Optimisation
+|  					| 3-4 Merge Sort -- Bottom to Up
+|   				| 3-5 Quick Sort
+|        			| 3-6 Quick Sort (Randomly)
+| 					| 3-7 
 
