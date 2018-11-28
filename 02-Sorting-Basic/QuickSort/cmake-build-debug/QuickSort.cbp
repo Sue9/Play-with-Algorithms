@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Github Sue9/Play-with-Algorithms/02-Sorting-Basic/QuickSort/QuickSort.h">
+			<Option target="QuickSort"/>
+		</Unit>
 		<Unit filename="D:/Github Sue9/Play-with-Algorithms/02-Sorting-Basic/QuickSort/main.cpp">
 			<Option target="QuickSort"/>
 		</Unit>
