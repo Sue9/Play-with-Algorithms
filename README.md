@@ -20,5 +20,7 @@
 |  					| 3-4 Merge Sort -- Bottom to Up
 |   				| 3-5 Quick Sort
 |        			| 3-6 Quick Sort (Randomly)
-| 					| 3-7 
+| 					| 3-7 Quick Sort (2 Pointers)
+| 					| 3-8 QUick Sort (3 Ways)
+| 					| 3-9 Problems stemming from Merge sort and Quick sort
 
