@@ -1,0 +1,4 @@
+"D:\Installation\CLion 2018.2.6\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\Github Sue9\Play-with-Algorithms\04-Heap\MaxHeap"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/cmake-build-debug
