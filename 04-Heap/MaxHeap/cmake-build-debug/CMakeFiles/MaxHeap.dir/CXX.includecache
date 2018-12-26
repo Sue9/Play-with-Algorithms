@@ -6,6 +6,52 @@
 
 #IncludeRegexTransform: 
 
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/Heap.h
+ctime
+-
+cassert
+-
+cmath
+-
+iostream
+-
+
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/HeapSort.h
+iostream
+-
+ctime
+-
+cassert
+-
+cmath
+-
+Heap.h
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/Heap.h
+
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/InsertionSort.h
+iostream
+-
+SortTestHelper.h
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/SortTestHelper.h
+
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/MergeSort.h
+InsertionSort.h
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/InsertionSort.h
+
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/QuickSort.h
+iostream
+-
+InsertionSort.h
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/InsertionSort.h
+
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/SortTestHelper.h
+iostream
+-
+ctime
+-
+cassert
+-
+
 D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/main.cpp
 iostream
 -
@@ -15,4 +61,14 @@ cassert
 -
 cmath
 -
+Heap.h
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/Heap.h
+MergeSort.h
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/MergeSort.h
+QuickSort.h
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/QuickSort.h
+SortTestHelper.h
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/SortTestHelper.h
+HeapSort.h
+D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/HeapSort.h
 

@@ -3,195 +3,130 @@
 #include <cassert>
 #include <cmath>
 
+#include "Heap.h"
+#include "MergeSort.h"
+#include "QuickSort.h"
+#include "SortTestHelper.h"
+#include "HeapSort.h"
 
 using namespace std;
 
-template <typename Item>
-class MaxHeap{
-private:
-    Item* data;
-    int count;
-    int capacity;
+template <typename T>
+void __shiftDown(T arr[], int n, int k){
+    while(2*k + 1 <= n - 1){
+        int j = 2*k + 1;
+        if(j+1 <= n-1 && arr[j] < arr[j+1])
+            j += 1;
+        if(arr[k] >= arr[j])
+            break;
 
-    //k is index
-    void shiftUp(int k){
-        while(k > 1 && data[k] > data[k / 2]){
-            swap(data[k], data[k / 2]);
-            k /= 2;
-        }
+        swap(arr[k], arr[j]);
+        k = j;
+    }
+}
+
+template <typename T>
+void heapSort(T arr[], int n){
+    //heapify
+    for(int i = (n-1) / 2; i >= 0; i--){
+        __shiftDown(arr, n, i);
     }
 
-    void shiftDown(int k){
-        while(2*k <= count){
-            //assume change the position with j
-            int j = 2 * k;
-            //if it has the right child & right child node > left child node
-            //then we'd chose right child node, which to chose the larger one
-            if(j + 1 <= count && data[j] < data[j + 1]){
-                j += 1;
-            }
-
-            //if the father node is the largest, stop the loop here
-            if(data[k] >= data[j])
-                break;
-
-            swap(data[k], data[j]);
-
-            k = j;
-
-        }
+    for(int i = n-1; i > 0; i--){
+        swap( arr[0], arr[i] );
+        __shiftDown(arr, i, 0);
     }
-
-
-    void putNumberInLine( int num, string &line, int index_cur_level, int cur_tree_width, bool isLeft){
-
-        int sub_tree_width = (cur_tree_width - 1) / 2;
-        int offset = index_cur_level * (cur_tree_width+1) + sub_tree_width;
-        assert(offset + 1 < line.size());
-        if( num >= 10 ) {
-            line[offset + 0] = '0' + num / 10;
-            line[offset + 1] = '0' + num % 10;
-        }
-        else{
-            if( isLeft)
-                line[offset + 0] = '0' + num;
-            else
-                line[offset + 1] = '0' + num;
-        }
-    }
-
-    void putBranchInLine( string &line, int index_cur_level, int cur_tree_width){
-
-        int sub_tree_width = (cur_tree_width - 1) / 2;
-        int sub_sub_tree_width = (sub_tree_width - 1) / 2;
-        int offset_left = index_cur_level * (cur_tree_width+1) + sub_sub_tree_width;
-        assert( offset_left + 1 < line.size() );
-        int offset_right = index_cur_level * (cur_tree_width+1) + sub_tree_width + 1 + sub_sub_tree_width;
-        assert( offset_right < line.size() );
-
-        line[offset_left + 1] = '/';
-        line[offset_right + 0] = '\\';
-    }
-
-public:
-    MaxHeap(int capacity){
-        data = new Item[capacity + 1];
-        count = 0;
-        this -> capacity = capacity;
-    }
-    ~MaxHeap(){
-        delete [] data;
-    }
-
-
-    int size(){
-        return count;
-    }
-
-    bool isEmpty(){
-        return count == 0;
-    }
-
-    void insert(Item item){
-        assert( count + 1 <= capacity );
-        data[count+1] = item;
-        count ++;
-        shiftUp( count );
-
-    }
-
-    Item extractMax(){
-        assert( count > 0 );
-        Item ret = data[1];
-
-        swap(data[1] , data[count]);
-        count --;
-
-        shiftDown( 1 );
-
-        return ret;
-    }
-
-
-    void testPrint(){
-
-        // 我们的testPrint只能打印100个元素以内的堆的树状信息
-        if( size() >= 100 ){
-            cout<<"This print function can only work for less than 100 int";
-            return;
-        }
-
-        // 我们的testPrint只能处理整数信息
-        if( typeid(Item) != typeid(int) ){
-            cout <<"This print function can only work for int item";
-            return;
-        }
-
-        cout<<"The max heap size is: "<<size()<<endl;
-        cout<<"Data in the max heap: ";
-        for( int i = 1 ; i <= size() ; i ++ ){
-            // 我们的testPrint要求堆中的所有整数在[0, 100)的范围内
-            assert( data[i] >= 0 && data[i] < 100 );
-            cout<<data[i]<<" ";
-        }
-        cout<<endl;
-        cout<<endl;
-
-        int n = size();
-        int max_level = 0;
-        int number_per_level = 1;
-        while( n > 0 ) {
-            max_level += 1;
-            n -= number_per_level;
-            number_per_level *= 2;
-        }
-
-        int max_level_number = int(pow(2, max_level-1));
-        int cur_tree_max_level_number = max_level_number;
-        int index = 1;
-        for( int level = 0 ; level < max_level ; level ++ ){
-            string line1 = string(max_level_number*3-1, ' ');
-
-            int cur_level_number = min(count-int(pow(2,level))+1,int(pow(2,level)));
-            bool isLeft = true;
-            for( int index_cur_level = 0 ; index_cur_level < cur_level_number ; index ++ , index_cur_level ++ ){
-                putNumberInLine( data[index] , line1 , index_cur_level , cur_tree_max_level_number*3-1 , isLeft );
-                isLeft = !isLeft;
-            }
-            cout<<line1<<endl;
-
-            if( level == max_level - 1 )
-                break;
-
-            string line2 = string(max_level_number*3-1, ' ');
-            for( int index_cur_level = 0 ; index_cur_level < cur_level_number ; index_cur_level ++ )
-                putBranchInLine( line2 , index_cur_level , cur_tree_max_level_number*3-1 );
-            cout<<line2<<endl;
-
-            cur_tree_max_level_number /= 2;
-        }
-    }
-
-};
+}
 
 int main() {
+    cout.precision(7);
+    int n = 50000;
 
-    MaxHeap<int> maxheap = MaxHeap<int>(100);
-    cout << maxheap.size() << endl;
+    // 测试1 一般性测试
+    cout<<"Test for random array, size = "<<n<<", random range [0, "<<n<<"]"<<endl;
+    int* arr1 = SortTestHelper::generateRandomArray(n,0,n);
+    int* arr2 = SortTestHelper::copyIntArray(arr1, n);
+    int* arr3 = SortTestHelper::copyIntArray(arr1, n);
+    int* arr4 = SortTestHelper::copyIntArray(arr1, n);
+    int* arr5 = SortTestHelper::copyIntArray(arr1, n);
+    int* arr6 = SortTestHelper::copyIntArray(arr1, n);
+    int* arr7 = SortTestHelper::copyIntArray(arr1, n);
 
+    SortTestHelper::testSort("Merge Sort", mergeSort, arr1, n);
+    SortTestHelper::testSort("Quick Sort", quickSort, arr2, n);
+    SortTestHelper::testSort("Quick Sort 2 Ways", quickSort2, arr3, n);
+    SortTestHelper::testSort("Quick Sort 3 Ways", quickSort3Ways, arr4, n);
+    SortTestHelper::testSort("Heap Sort 1", heapSort1, arr5, n);
+    SortTestHelper::testSort("Heap Sort 2", heapSort2, arr6, n);
+    SortTestHelper::testSort("Heap Sort 3", heapSort, arr7, n);
 
-    //test insert
-    srand(time(NULL));
-    for(int i = 0; i < 50; i++){
-        maxheap.insert( rand()%100 );
+    delete[] arr1;
+    delete[] arr2;
+    delete[] arr3;
+    delete[] arr4;
+    delete[] arr5;
+    delete[] arr6;
+    delete[] arr7;
 
-    }
-    maxheap.testPrint();
-
-    //test extract
-    while( !maxheap.isEmpty() )
-        cout<<maxheap.extractMax()<<" ";
     cout<<endl;
+
+
+    // 测试2 测试近乎有序的数组
+    int swapTimes = 100;
+    cout<<"Test for nearly ordered array, size = "<<n<<", swap time = "<<swapTimes<<endl;
+    arr1 = SortTestHelper::generateNearlyOrderedArray(n,swapTimes);
+    arr2 = SortTestHelper::copyIntArray(arr1, n);
+    arr3 = SortTestHelper::copyIntArray(arr1, n);
+    arr4 = SortTestHelper::copyIntArray(arr1, n);
+    arr5 = SortTestHelper::copyIntArray(arr1, n);
+    arr6 = SortTestHelper::copyIntArray(arr1, n);
+    arr7 = SortTestHelper::copyIntArray(arr1, n);
+
+    SortTestHelper::testSort("Merge Sort", mergeSort, arr1, n);
+    SortTestHelper::testSort("Quick Sort", quickSort, arr2, n);
+    SortTestHelper::testSort("Quick Sort 2 Ways", quickSort2, arr3, n);
+    SortTestHelper::testSort("Quick Sort 3 Ways", quickSort3Ways, arr4, n);
+    SortTestHelper::testSort("Heap Sort 1", heapSort1, arr5, n);
+    SortTestHelper::testSort("Heap Sort 2", heapSort2, arr6, n);
+    SortTestHelper::testSort("Heap Sort 3", heapSort, arr7, n);
+
+    delete[] arr1;
+    delete[] arr2;
+    delete[] arr3;
+    delete[] arr4;
+    delete[] arr5;
+    delete[] arr6;
+    delete[] arr7;
+
+    cout<<endl;
+
+
+    // 测试3 测试存在包含大量相同元素的数组
+    cout<<"Test for random array, size = "<<n<<", random range [0,10]"<<endl;
+    arr1 = SortTestHelper::generateRandomArray(n,0,10);
+    arr2 = SortTestHelper::copyIntArray(arr1, n);
+    arr3 = SortTestHelper::copyIntArray(arr1, n);
+    arr4 = SortTestHelper::copyIntArray(arr1, n);
+    arr5 = SortTestHelper::copyIntArray(arr1, n);
+    arr6 = SortTestHelper::copyIntArray(arr1, n);
+    arr7 = SortTestHelper::copyIntArray(arr1, n);
+
+    SortTestHelper::testSort("Merge Sort", mergeSort, arr1, n);
+    // 这种情况下, 普通的QuickSort退化为O(n^2)的算法, 不做测试
+//    SortTestHelper::testSort("Quick Sort", quickSort, arr2, n);
+    SortTestHelper::testSort("Quick Sort 2 Ways", quickSort2, arr3, n);
+    SortTestHelper::testSort("Quick Sort 3 Ways", quickSort3Ways, arr4, n);
+    SortTestHelper::testSort("Heap Sort 1", heapSort1, arr5, n);
+    SortTestHelper::testSort("Heap Sort 2", heapSort2, arr6, n);
+    SortTestHelper::testSort("Heap Sort 3", heapSort, arr7, n);
+
+    delete[] arr1;
+    delete[] arr2;
+    delete[] arr3;
+    delete[] arr4;
+    delete[] arr5;
+    delete[] arr6;
+    delete[] arr7;
 
     return 0;
 }

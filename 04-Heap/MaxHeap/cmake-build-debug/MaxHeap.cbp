@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/Heap.h">
+			<Option target="MaxHeap"/>
+		</Unit>
+		<Unit filename="D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/HeapSort.h">
+			<Option target="MaxHeap"/>
+		</Unit>
 		<Unit filename="D:/Github Sue9/Play-with-Algorithms/04-Heap/MaxHeap/main.cpp">
 			<Option target="MaxHeap"/>
 		</Unit>
