@@ -14,6 +14,7 @@
 | 					| 2-5 Insertion Sort
 | 					| 2-6 Optimisation of Insertion Sort
 | 					| 2-7 More on O(n ^ 2) sorting algorithms(Bubble Sort & Shell Sort)
+| 					| 
 | 三、 Quicker Sort 	| 3-1 Merge Sort -- Up to Bottom
 |					| 3-2 Merge Sort II
 | 					| 3-3 Merge Sort Optimisation
@@ -23,7 +24,13 @@
 | 					| 3-7 Quick Sort (2 Pointers)
 | 					| 3-8 Quick Sort (3 Ways)
 | 					| 3-9 Problems stemming from Merge sort and Quick sort
+| 					| 
 | 四、 Heap 			| 4-1 Why Heap
 | 					| 4-2 Heap Basics
 | 					| 4-3 Shift Up
 |   				| 4-4 Shift Down
+| 					| 4-5 Basic Heap Sort
+| 					| 4-6 In-place Heap Sort
+| 					| 4-7 Sorting Algorithms' Summary
+| 					| 4-8 Index Heap
+| 					| 4-9 
