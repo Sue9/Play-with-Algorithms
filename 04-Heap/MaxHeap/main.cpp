@@ -11,35 +11,10 @@
 
 using namespace std;
 
-template <typename T>
-void __shiftDown(T arr[], int n, int k){
-    while(2*k + 1 <= n - 1){
-        int j = 2*k + 1;
-        if(j+1 <= n-1 && arr[j] < arr[j+1])
-            j += 1;
-        if(arr[k] >= arr[j])
-            break;
 
-        swap(arr[k], arr[j]);
-        k = j;
-    }
-}
-
-template <typename T>
-void heapSort(T arr[], int n){
-    //heapify
-    for(int i = (n-1) / 2; i >= 0; i--){
-        __shiftDown(arr, n, i);
-    }
-
-    for(int i = n-1; i > 0; i--){
-        swap( arr[0], arr[i] );
-        __shiftDown(arr, i, 0);
-    }
-}
 
 int main() {
-    cout.precision(7);
+//    cout.precision(7);
     int n = 50000;
 
     // 测试1 一般性测试

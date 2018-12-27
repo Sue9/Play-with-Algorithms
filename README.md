@@ -33,4 +33,9 @@
 | 					| 4-6 In-place Heap Sort
 | 					| 4-7 Sorting Algorithms' Summary
 | 					| 4-8 Index Heap
-| 					| 4-9 
+| 					| 4-9 Index Heap Optimisation
+| 					| 4-10 Some related issues
+| 					|
+| 五、Binary Search Tree| 5-1 Binary Search
+| 					| 5-2 Binary Search Tree Basics
+
