@@ -31,7 +31,7 @@ public:
     }
     ~BST(){
         //TODO
-        
+
     }
 
     int size(){
