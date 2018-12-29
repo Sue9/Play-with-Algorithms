@@ -1,4 +1,6 @@
 #include <iostream>
+#include <stdio.h>
+#include <malloc.h>
 
 using namespace std;
 
@@ -29,6 +31,7 @@ public:
     }
     ~BST(){
         //TODO
+        
     }
 
     int size(){
@@ -39,6 +42,7 @@ public:
         return count == 0;
     }
 };
+
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
