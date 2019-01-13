@@ -38,4 +38,7 @@
 | 					|
 | 五、Binary Search Tree| 5-1 Binary Search
 | 					| 5-2 Binary Search Tree Basics
+|                   | 5-3 BST Insert
+|                   | 5-4 BST Contain & Search
+
 
