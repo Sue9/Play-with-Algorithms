@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/006 -- Github/Play-with-Algorithms/05-Binary-Search-Tree/BinarySearchTree/FileOps.h
+string
+-
+iostream
+-
+fstream
+-
+vector
+-
+
+E:/006 -- Github/Play-with-Algorithms/05-Binary-Search-Tree/BinarySearchTree/SequenceST.h
+iostream
+-
+cassert
+-
+
+E:/006 -- Github/Play-with-Algorithms/05-Binary-Search-Tree/BinarySearchTree/main.cpp
+iostream
+-
+stdio.h
+-
+malloc.h
+-
+vector
+-
+time.h
+-
+FileOps.h
+E:/006 -- Github/Play-with-Algorithms/05-Binary-Search-Tree/BinarySearchTree/FileOps.h
+SequenceST.h
+E:/006 -- Github/Play-with-Algorithms/05-Binary-Search-Tree/BinarySearchTree/SequenceST.h
+
