@@ -38,4 +38,13 @@
 | 					|
 | 五、Binary Search Tree| 5-1 Binary Search
 | 					| 5-2 Binary Search Tree Basics
+|                   | 5-3 BST Insert
+|                   | 5-4 BST Contain & Search
+| 					| 5-5 Traversal: Depth-First-Search (pre-order, in-order, post-order)
+| 					| 5-6 Traversal: Breadth-First-Search (using queue)
+| 					| 5-7 Remove Min & Max
+| 					| 5-8 Remove any node (Hubbard Deletion)
+| 					| 5-9 BST order
+|					| 5-10 BST limitation 
+
 

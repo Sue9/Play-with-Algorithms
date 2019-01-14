@@ -1,4 +1,6 @@
-"D:\Installation\CLion 2018.2.6\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\Github Sue9\Play-with-Algorithms\02-Sorting-Basic\MergeSort"
--- Configuring done
--- Generating done
--- Build files have been written to: D:/Github Sue9/Play-with-Algorithms/02-Sorting-Basic/MergeSort/cmake-build-debug
+"D:\CLion 2018.2.6\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "E:\006 -- Github\Play-with-Algorithms\02-Sorting-Basic\MergeSort"
+CMake Error: CMake was unable to find a build program corresponding to "MinGW Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMake was unable to find a build program corresponding to "MinGW Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!

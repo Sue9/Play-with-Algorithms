@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Github Sue9/Play-with-Algorithms/05-Binary-Search-Tree/BinarySearchTree/FileOps.h">
+			<Option target="BinarySearchTree"/>
+		</Unit>
 		<Unit filename="D:/Github Sue9/Play-with-Algorithms/05-Binary-Search-Tree/BinarySearchTree/main.cpp">
 			<Option target="BinarySearchTree"/>
 		</Unit>
