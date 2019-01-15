@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Github Sue9/Play-with-Algorithms/06-Union-Find/UnionFind1.h
+iostream
+-
+cassert
+-
+
+D:/Github Sue9/Play-with-Algorithms/06-Union-Find/UnionFind2.h
+cassert
+-
+
+D:/Github Sue9/Play-with-Algorithms/06-Union-Find/UnionFind3.h
+cassert
+-
+
+D:/Github Sue9/Play-with-Algorithms/06-Union-Find/UnionFindTestHelper.h
+iostream
+-
+ctime
+-
+UnionFind1.h
+D:/Github Sue9/Play-with-Algorithms/06-Union-Find/UnionFind1.h
+UnionFind2.h
+D:/Github Sue9/Play-with-Algorithms/06-Union-Find/UnionFind2.h
+UnionFind3.h
+D:/Github Sue9/Play-with-Algorithms/06-Union-Find/UnionFind3.h
+
+D:/Github Sue9/Play-with-Algorithms/06-Union-Find/main.cpp
+iostream
+-
+cassert
+-
+UnionFindTestHelper.h
+D:/Github Sue9/Play-with-Algorithms/06-Union-Find/UnionFindTestHelper.h
+
