@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Github Sue9/Play-with-Algorithms/07-Graph/DenseGraph.h
+cassert
+-
+vector
+-
+
+D:/Github Sue9/Play-with-Algorithms/07-Graph/SparseGraph.h
+cassert
+-
+vector
+-
+
+D:/Github Sue9/Play-with-Algorithms/07-Graph/main.cpp
+iostream
+-
+SparseGraph.h
+D:/Github Sue9/Play-with-Algorithms/07-Graph/SparseGraph.h
+DenseGraph.h
+D:/Github Sue9/Play-with-Algorithms/07-Graph/DenseGraph.h
+ctime
+-
+

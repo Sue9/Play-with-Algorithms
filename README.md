@@ -47,11 +47,16 @@
 | 					| 5-9 BST order
 |					| 5-10 BST limitation 
 | 					| 5-11 Other trees
+| 					|
 | 六、 Union 		| 6-1 Union Find Basics
 | 					| 6-2 Quick Find
 | 					| 6-3 Optimisation: quick union
 | 					| 6-4 Optimisation by size
 | 					| 6-5 Optimisation by rank
 | 					| 6-6 Optimisation: path compression
+| 					|
+| 七、 Graph 		| 7-1 Graph basics
+| 					| 7-2 Adjacency Matrix & Adjacency List
+| 					| 7-3 
 
 
