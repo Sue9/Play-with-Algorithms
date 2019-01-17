@@ -6,16 +6,48 @@
 
 #IncludeRegexTransform: 
 
+D:/Github Sue9/Play-with-Algorithms/07-Graph/Component.h
+iostream
+-
+cassert
+-
+
 D:/Github Sue9/Play-with-Algorithms/07-Graph/DenseGraph.h
 cassert
 -
 vector
+-
+iostream
+-
+
+D:/Github Sue9/Play-with-Algorithms/07-Graph/Path.h
+iostream
+-
+cassert
+-
+vector
+-
+stack
+-
+
+D:/Github Sue9/Play-with-Algorithms/07-Graph/ReadGraph.h
+iostream
+-
+string
+-
+fstream
+-
+sstream
+-
+cassert
 -
 
 D:/Github Sue9/Play-with-Algorithms/07-Graph/SparseGraph.h
 cassert
 -
 vector
+-
+iostream
 -
 
 D:/Github Sue9/Play-with-Algorithms/07-Graph/main.cpp
@@ -27,4 +59,10 @@ DenseGraph.h
 D:/Github Sue9/Play-with-Algorithms/07-Graph/DenseGraph.h
 ctime
 -
+ReadGraph.h
+D:/Github Sue9/Play-with-Algorithms/07-Graph/ReadGraph.h
+Component.h
+D:/Github Sue9/Play-with-Algorithms/07-Graph/Component.h
+Path.h
+D:/Github Sue9/Play-with-Algorithms/07-Graph/Path.h
 

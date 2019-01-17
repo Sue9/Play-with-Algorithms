@@ -7,6 +7,7 @@
 
 #include <cassert>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -59,6 +60,17 @@ public:
         }
 
         return false;
+    }
+
+    // 显示图的信息
+    void show(){
+
+        for( int i = 0 ; i < vertexN ; i ++ ){
+            cout<<"vertex "<<i<<":\t";
+            for( int j = 0 ; j < g[i].size() ; j ++ )
+                cout<<g[i][j]<<"\t";
+            cout<<endl;
+        }
     }
 
 

@@ -7,6 +7,7 @@
 
 #include <cassert>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -59,6 +60,16 @@ public:
         return g[v][w];
     }
 
+
+    // 显示图的信息
+    void show(){
+
+        for( int i = 0 ; i < vertexN ; i ++ ){
+            for( int j = 0 ; j < vertexN ; j ++ )
+                cout<<g[i][j]<<"\t";
+            cout<<endl;
+        }
+    }
 
     class adjIterator{
     private:
