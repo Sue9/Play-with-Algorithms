@@ -59,6 +59,11 @@
 | 					| 7-2 Adjacency Matrix & Adjacency List
 | 					| 7-3 Adjacent Vertex Iterator
 | 					| 7-4 Read Graph
-| 					| 7-5 Dfs & Components
+| 					| 7-5 DFS & Components
 | 					| 7-6 Find a path
-
+| 					| 7-7 BFS & the Shortest Path
+|					|
+| 八、 MST 			| 8-1 Weighted Graph
+| 					| 8-2 Cut Property
+| 					| 8-3 MST Algorithm: Lazy Prim
+| 					|
