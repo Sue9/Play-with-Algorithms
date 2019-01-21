@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-E:/006 -- Github/Play-with-Algorithms/08-MST/DenseGraph.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/DenseGraph.h
 cassert
 -
 vector
@@ -14,13 +14,45 @@ vector
 iostream
 -
 Edge.h
-E:/006 -- Github/Play-with-Algorithms/08-MST/Edge.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/Edge.h
 
-E:/006 -- Github/Play-with-Algorithms/08-MST/Edge.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/Edge.h
 iostream
 -
 
-E:/006 -- Github/Play-with-Algorithms/08-MST/ReadGraph.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/IndexMinHeap.h
+iostream
+-
+algorithm
+-
+cassert
+-
+
+D:/Github Sue9/Play-with-Algorithms/08-MST/LazyPrimMST.h
+MinHeap.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/MinHeap.h
+Edge.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/Edge.h
+
+D:/Github Sue9/Play-with-Algorithms/08-MST/MinHeap.h
+algorithm
+-
+cassert
+-
+
+D:/Github Sue9/Play-with-Algorithms/08-MST/PrimMST.h
+iostream
+-
+vector
+-
+cassert
+-
+Edge.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/Edge.h
+IndexMinHeap.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/IndexMinHeap.h
+
+D:/Github Sue9/Play-with-Algorithms/08-MST/ReadGraph.h
 iostream
 -
 string
@@ -32,7 +64,7 @@ sstream
 cassert
 -
 
-E:/006 -- Github/Play-with-Algorithms/08-MST/SparseGraph.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/SparseGraph.h
 cassert
 -
 vector
@@ -40,17 +72,21 @@ vector
 iostream
 -
 Edge.h
-E:/006 -- Github/Play-with-Algorithms/08-MST/Edge.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/Edge.h
 
-E:/006 -- Github/Play-with-Algorithms/08-MST/main.cpp
+D:/Github Sue9/Play-with-Algorithms/08-MST/main.cpp
 iostream
 -
 DenseGraph.h
-E:/006 -- Github/Play-with-Algorithms/08-MST/DenseGraph.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/DenseGraph.h
 SparseGraph.h
-E:/006 -- Github/Play-with-Algorithms/08-MST/SparseGraph.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/SparseGraph.h
 ReadGraph.h
-E:/006 -- Github/Play-with-Algorithms/08-MST/ReadGraph.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/ReadGraph.h
 iomanip
 -
+LazyPrimMST.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/LazyPrimMST.h
+PrimMST.h
+D:/Github Sue9/Play-with-Algorithms/08-MST/PrimMST.h
 

@@ -3,6 +3,10 @@
 
 CMakeFiles/08_MST.dir/main.cpp.obj: ../DenseGraph.h
 CMakeFiles/08_MST.dir/main.cpp.obj: ../Edge.h
+CMakeFiles/08_MST.dir/main.cpp.obj: ../IndexMinHeap.h
+CMakeFiles/08_MST.dir/main.cpp.obj: ../LazyPrimMST.h
+CMakeFiles/08_MST.dir/main.cpp.obj: ../MinHeap.h
+CMakeFiles/08_MST.dir/main.cpp.obj: ../PrimMST.h
 CMakeFiles/08_MST.dir/main.cpp.obj: ../ReadGraph.h
 CMakeFiles/08_MST.dir/main.cpp.obj: ../SparseGraph.h
 CMakeFiles/08_MST.dir/main.cpp.obj: ../main.cpp

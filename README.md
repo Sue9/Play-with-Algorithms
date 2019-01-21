@@ -66,4 +66,8 @@
 | 八、 MST 			| 8-1 Weighted Graph
 | 					| 8-2 Cut Property
 | 					| 8-3 MST Algorithm: Lazy Prim
-| 					|
+| 					| 8-4 Optimised Lazy Prim
+| 					| 8-5 Coding: Prim 
+|					| 8-6 Kruskal Algorithm
+| 					| 8-7 More on MST
+

@@ -1,4 +1,4 @@
-# Install script for directory: E:/006 -- Github/Play-with-Algorithms/08-MST
+# Install script for directory: D:/Github Sue9/Play-with-Algorithms/08-MST
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/006 -- Github/Play-with-Algorithms/08-MST/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Github Sue9/Play-with-Algorithms/08-MST/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

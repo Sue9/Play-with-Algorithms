@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/006 -- Github/Play-with-Algorithms/08-MST/main.cpp" "E:/006 -- Github/Play-with-Algorithms/08-MST/cmake-build-debug/CMakeFiles/08_MST.dir/main.cpp.obj"
+  "D:/Github Sue9/Play-with-Algorithms/08-MST/main.cpp" "D:/Github Sue9/Play-with-Algorithms/08-MST/cmake-build-debug/CMakeFiles/08_MST.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
