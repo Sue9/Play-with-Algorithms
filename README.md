@@ -70,4 +70,8 @@
 | 					| 8-5 Coding: Prim 
 |					| 8-6 Kruskal Algorithm
 | 					| 8-7 More on MST
+| 九、 Shortest Path | 9-1 Shortest Path & Relaxation
+| 					| 9-2 Dijkstra Algorithm
+| 					| 9-3 Dijkstra Coding
+
 
