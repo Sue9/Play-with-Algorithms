@@ -73,5 +73,9 @@
 | 九、 Shortest Path | 9-1 Shortest Path & Relaxation
 | 					| 9-2 Dijkstra Algorithm
 | 					| 9-3 Dijkstra Coding
-
+| 					| 9-4 Bellman-Ford Algorithm
+| 					| 9-5 Bellman-Ford Coding
+| 					| 9-6 More discussion on Shortest Path
+| 					|
+| 十、 Conclusion 	| 10-1 Conclusion of this course
 
